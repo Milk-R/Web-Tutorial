@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1">
+        
+        <style>
+            
+            .image {
+                width: 30%;
+                height: auto;
+                display: block;
+            }
+        
+            .container {
+                width: 30%;
+                position: relative;
+            }
+            
+            .overlay {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 30%;
+                opacity: 0;
+                position: absolute;
+                transition: .5x ease;
+                background-color: #008CBA;
+            }
+            
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            
+            .text {
+                top: 50%;
+                left: 50%;
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <h2> Fade in Overlay </h2>
+        <p> Hover over the image to see the effect. </p>
+        
+        <div class="container">
+            <img src="Totoro.png" alt="Avatar" class="image">
+            
+            <div class="overlay">
+                <div class="text"> I am a little monk! </div>
+            </div>
+        </div>
+    </body>
+</html>
